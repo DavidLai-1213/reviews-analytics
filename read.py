@@ -12,3 +12,9 @@ for i in data:
     num += len(i)
 print("資料的平均長度是", num/len(data))
 
+new = []
+for d in data:
+    if len(d) < 100:
+        new.append(d)
+print('一共有', len(new), '比留言長度小於100')
+print(new[0])
